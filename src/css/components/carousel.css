@@ -33,9 +33,15 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
   justify-content: center;/* Centre le contenu du bouton horizontalement - https://developer.mozilla.org/fr/docs/Web/CSS/justify-content */
   border: 1px solid #333;/* Bordure solide de 1px - https://developer.mozilla.org/fr/docs/Web/CSS/border */
   border-radius:50%;/* Bordure arrondie pour faire un cercle - https://developer.mozilla.org/fr/docs/Web/CSS/border-radius */
+  position:absolute;
 }
 .carousel__button--prev {
   transform: rotate(180deg);/* Fait pivoter le bouton de 180 degrés - https://developer.mozilla.org/fr/docs/Web/CSS/transform */
+  translate: -100%;
+}
+
+.carousel__button--next {
+  translate: 100%;
 }
 
 .carousel__container {
